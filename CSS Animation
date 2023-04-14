@@ -1,0 +1,23 @@
+<style>
+  .moving-element {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation: move 3s linear infinite;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+</style>
+
+<div class="moving-element"></div>
