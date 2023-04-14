@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Results</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		input[type=text] {
+			padding: 6px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 6px;
+			margin-bottom: 16px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Search Results</h1>
+
+	<form>
+		<label for="search">Search:</label>
+		<input type="text" id="search" name="search" placeholder="Enter search term...">
+		<input type="submit" value="Submit">
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Link</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Result 1</td>
+				<td>Description of Result 1</td>
+				<td><a href="#">Link to Result 1</a></td>
+			</tr>
+			<tr>
+				<td>Result 2</td>
+				<td>Description of Result 2</td>
+				<td><a href="#">Link to Result 2</a></td>
+			</tr>
+			<tr>
+				<td>Result 3</td>
+				<td>Description of Result 3</td>
+				<td><a href="#">Link to Result 3</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
